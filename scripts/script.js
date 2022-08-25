@@ -214,10 +214,12 @@ const validRegistration = () => {
   if (emailValidUser && passwordValidUser && checkedValid) {
     if (saveUser(user)) {
       setTimeout(registration, 100)
-      setTimeout(location.reload(), 100)
+      setTimeout(location.reload(), 200)
+      formRegistration.style.display = 'none'
+      formAuthorization.style.display = 'block'
     } else {
       setTimeout(registrationError, 100)
-      setTimeout(location.reload(), 100)
+      setTimeout(location.reload(), 200)
     }
   }
 }
@@ -268,9 +270,11 @@ const validAuthorization = () => {
   if (valueEmailAuthorization.length && valuePasswordAuthorization.length && checkAuthorizationChecked) {
     if (validateUsers(user)) {
       setTimeout(authorization, 100)
+      setTimeout(location.reload(), 200)
       authorizationValid.style.display = 'none'
     } else {
       setTimeout(authorizationError, 100)
+      setTimeout(location.reload(), 200)
       authorizationValid.style.display = 'block'
     }
   }
