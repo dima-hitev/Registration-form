@@ -1,1 +1,1 @@
-# Registration-form.-Authorization-form
+# Registration-form. Authorization-form
