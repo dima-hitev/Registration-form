@@ -214,10 +214,10 @@ const validRegistration = () => {
   if (emailValidUser && passwordValidUser && checkedValid) {
     if (saveUser(user)) {
       setTimeout(registration, 100)
-      setTimeout("window.location.href = '../index.html'", 100)
+      // setTimeout("window.location.href = '../index.html'", 100)
     } else {
       setTimeout(registrationError, 100)
-      setTimeout("window.location.href = '../index.html'", 100)
+      // setTimeout("window.location.href = '../index.html'", 100)
     }
   }
 }
